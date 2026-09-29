@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Northline Yoga — Secure Membership Checkout</title>
+<meta name="description" content="Activate your Northline Yoga membership for $9/month. Gentle online yoga classes and guided practices for seniors. 30-day money-back promise.">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%232F5D5A'/%3E%3C/svg%3E">
+</head>
+<body><a class="skip-link" href="#main">Skip to main content</a>
+<div class="text-size-bar" role="group" aria-label="Text size options">
+  Text size:
+  <button type="button" data-textsize="small">A</button>
+  <button type="button" data-textsize="medium">A+</button>
+  <button type="button" data-textsize="large">A++</button>
+  <button type="button" data-textsize="xlarge">A+++</button>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="Northline Yoga home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="5" r="2.2"/><path d="M12 7.5V14M12 14c-3 0-5 2-5 5M12 14c3 0 5 2 5 5M8 10.5h8"/></svg>
+      </span>
+      <span class="logo-text">Northline Yoga<small>Gentle Yoga for Seniors</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="poses.html">Yoga Poses</a>
+      <a href="classes.html">Online Classes</a>
+      <a href="contact.html">Contact</a>
+      <a href="checkout.html" class="nav-cta">Join for $9/month</a>
+    </nav>
+  </div>
+</header><main id="main">
+<section>
+  <div class="container">
+    <div class="section-head" style="margin-bottom:32px;">
+      <span class="eyebrow">Secure checkout</span>
+      <h2>Join Northline Yoga</h2>
+      <p>Complete the form below to activate your membership. You'll receive your class link by email within minutes.</p>
+    </div>
+
+    <div class="form-card wide" id="checkout-area">
+      <div class="secure-row">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+        256-bit encrypted checkout — your details are protected.
+      </div>
+
+      <div class="order-summary" id="order-summary" aria-live="polite"></div>
+
+      <form id="payment-form" novalidate>
+        <div class="field">
+          <label for="plan-select">Membership Plan</label>
+          <select id="plan-select" required>
+            <option value="monthly">Monthly Membership — $9.00/month</option>
+            <option value="yearly">Annual Membership — $90.00/year (2 months free)</option>
+          </select>
+        </div>
+
+        <fieldset style="border:none;">
+          <legend style="font-family:Georgia,serif;font-size:1.25rem;color:var(--teal-dark);font-weight:700;margin-bottom:16px;">Your Information</legend>
+          <div class="field">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="name" autocomplete="name" required placeholder="e.g., Eleanor Johnson">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="(555) 123-4567">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset style="border:none;margin-top:10px;">
+          <legend style="font-family:Georgia,serif;font-size:1.25rem;color:var(--teal-dark);font-weight:700;margin-bottom:16px;">Payment Details</legend>
+          <div class="field">
+            <label for="card-name">Name on Card</label>
+            <input type="text" id="card-name" autocomplete="cc-name" required placeholder="As printed on your card">
+          </div>
+          <div class="field">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" inputmode="numeric" autocomplete="cc-number" required placeholder="1234 5678 9012 3456" minlength="19" maxlength="19">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="card-exp">Expiration Date</label>
+              <input type="text" id="card-exp" inputmode="numeric" autocomplete="cc-exp" required placeholder="MM/YY" minlength="5" maxlength="5">
+            </div>
+            <div class="field">
+              <label for="card-cvc">Security Code (CVC)</label>
+              <input type="text" id="card-cvc" inputmode="numeric" autocomplete="cc-csc" required placeholder="123" minlength="3" maxlength="4">
+            </div>
+          </div>
+          <div class="field">
+            <label for="card-zip">Billing ZIP Code</label>
+            <input type="text" id="card-zip" inputmode="numeric" autocomplete="postal-code" required placeholder="12345" minlength="5" maxlength="10">
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-block btn-lg">Activate My Membership</button>
+        <p class="form-note" style="text-align:center;margin-top:16px;">
+          By joining you agree to our <a href="terms.html">Terms of Service</a>. Membership renews automatically and can be cancelled anytime — no questions asked.
+        </p>
+      </form>
+    </div>
+
+    <div class="success-panel" id="checkout-success" style="display:none;">
+      <div class="check-circle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg>
+      </div>
+      <h2>Welcome to Northline Yoga, <span id="success-name">Friend</span>!</h2>
+      <p style="font-size:1.15rem;">Your membership is active. A confirmation email with your class schedule and personal access link is on its way.</p>
+      <div class="order-summary" style="text-align:left;margin:26px auto;max-width:420px;">
+        <div class="row"><span>Plan</span><span id="success-plan">Monthly Membership — $9.00/month</span></div>
+        <div class="row"><span>Confirmation No.</span><span id="success-ref">NLY-000000</span></div>
+        <div class="row"><span>Status</span><span>Active</span></div>
+      </div>
+      <a class="btn btn-lg" href="classes.html">View Class Schedule</a>
+      <p style="margin-top:22px;">Need help getting set up? Call <a href="tel:+18005550142"><strong>1-800-555-0142</strong></a> — we're happy to walk you through it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt" style="padding-top:56px;">
+  <div class="container">
+    <div class="section-head">
+      <h2 style="font-size:1.6rem;">You're in Good Hands</h2>
+      <p>Every membership is backed by a 30-day money-back promise. If Northline Yoga isn't right for you, we'll refund your payment in full.</p>
+    </div>
+  </div>
+</section>
+</main><footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Northline Yoga</div>
+      <p>Gentle, senior-friendly yoga classes and guided practices designed for adults 60 and better. Move with confidence — from your living room.</p>
+      <p class="disclaimer-mini">Northline Yoga provides general wellness content for educational purposes. It is not medical advice. Always consult your physician before beginning any exercise program.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="poses.html">Yoga Pose Library</a>
+      <a href="classes.html">Online Classes</a>
+      <a href="checkout.html">Membership</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="refund.html">Cancellation &amp; Refund Policy</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="disclaimer.html">Health Disclaimer</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:hello@northlineyoga.site">hello@northlineyoga.site</a>
+      <a href="tel:+18005550142">1-800-555-0142</a>
+      <p style="margin-top:12px;">Mon–Fri, 8am–6pm CT<br>P.O. Box 1204, Duluth, MN 55801</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; <span data-year>2026</span> Northline Yoga · northlineyoga.site · All rights reserved.
+    <br><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="disclaimer.html">Disclaimer</a> · <a href="refund.html">Refunds</a>
+  </div>
+</footer>
+<button class="back-top" aria-label="Back to top">&#8593;</button><script src="assets/js/main.js"></script>
+</body>
+</html>
